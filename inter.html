@@ -21,8 +21,6 @@
             padding: 25px;
             background-color: transparent;
             backdrop-filter: blur(15px);
-            /* background-color: rgba(138, 134, 134, 0.3);
-            backdrop-filter: blur(5px); */
             background-image: linear-gradient(
             120deg,
             rgba(255, 255, 255, 0.3),
@@ -35,10 +33,38 @@
             font-family: "Zen Dots", sans-serif;
             font-weight: 400;
             font-style: normal;
-            color: antiquewhite;
-            align-items: center;
-            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 0 0 10px pink, 0 0 20px orangered, 0 0 30px red,
+          0 0 40px magenta, 0 0 50px white;
+            filter: saturate(60%);
             
+        }
+
+        .tym {
+            border: 2px solid darkred;
+            border-radius: 10px;
+            height: 50px;
+            width: 300px;
+            color: darkred;
+            background-color: lightpink;
+            margin-left: 50px;
+
+        }
+
+        p {
+            color: aliceblue;
+            margin-left: 50px;
+        }
+
+        .down {
+            border: 2px solid darkslateblue;
+            border-radius: 10px;
+            height: 50px;
+            width: 300px;
+            color: darkslateblue;
+            background-color: lightsteelblue;
+            margin-left: 50px;
         }
 
     </style>
@@ -47,16 +73,27 @@
     <div class="bg">
         <h1>INTERSTELLAR</h1>
     </div>
-    <button id="tym">Který tým je lepší?</button>
-    <button id="py">Download</button>
+    <button id="tym" class="tym">Který tým je nejlepší?</button>
+    <p id="nej"></p>
+    <button id="py" class="down">Download</button>
+    <a download="nahodny.py" onclick="interstellar()"></a>
     <script>
         let tlacitko = document.querySelector("#tym")
         tlacitko.addEventListener("click", team)
-        
-        // function(){}
 
-        // let tlacitko2 = document.querySelector("#py")
-        // tlacitko2.addEventListener("click", interstellar)
+        function team(){
+            let nej = "Nejlepší tým je 1"
+            document.getElementById("nej").textContent = nej
+        }
+
+        let tlacitko2 = document.querySelector("#py")
+        tlacitko2.addEventListener("click", interstellar)
+
+        function interstellar(){
+            let link = document.createElement("a")
+            link.href = "https://github.com/tran-lab/projekt-py-a-web/blob/main/nahodny.py"
+            link.click()
+        }
         </script>
 </body>
 </html>
