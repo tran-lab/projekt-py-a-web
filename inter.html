@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>interstellar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: darkslateblue;
+            background-image: url("obrazky/colorful.jpg");
+        }
+
+        .bg{
+            border: 0px solid black;
+            border-radius: 10%;
+            height: wh;
+            width: ww;
+            padding: 25px;
+            background-color: transparent;
+            backdrop-filter: blur(15px);
+            /* background-color: rgba(138, 134, 134, 0.3);
+            backdrop-filter: blur(5px); */
+            background-image: linear-gradient(
+            120deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(0, 0, 0, 0.2)
+            );
+            background-size: 20px;
+        }
+
+        .bg h1 {
+            font-family: "Zen Dots", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: antiquewhite;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+    </style>
 </head>
 <body>
+    <div class="bg">
+        <h1>INTERSTELLAR</h1>
+    </div>
     <button id="tym">Který tým je lepší?</button>
-    <button id="down">Download</button>
+    <button id="py">Download</button>
     <script>
         let tlacitko = document.querySelector("#tym")
-        tlacitko.addEventListener("click", interstellar)
+        tlacitko.addEventListener("click", team)
+        
+        // function(){}
 
-    </script>
+        // let tlacitko2 = document.querySelector("#py")
+        // tlacitko2.addEventListener("click", interstellar)
+        </script>
 </body>
 </html>
