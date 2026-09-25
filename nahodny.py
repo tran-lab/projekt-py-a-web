@@ -20,13 +20,13 @@ cislootazky = int(input("Napište číslo otázky: "))
 print(cislootazky)
 
 if cislootazky == 1:
-    print({interstellar["rokvydani"]})
+    print(f" Rok vydání je {interstellar["rokvydani"]}.")
 elif cislootazky == 2:
-      print({interstellar["herci"]})
+      print(f" Herci, kteří hrají hlavní postavy jsou: {interstellar["herci"]}.")
 elif cislootazky == 3:
-      ({interstellar["reziser"]})
+      print(f"Režisér je {interstellar["reziser"]}.")
 elif cislootazky == 4:
-      ({interstellar["delka"]})
+      print(f" Film má {interstellar["delka"]}.")
 else:
-      print("Prosím vyberte platné číslo otázky")
+      print("Prosím vyberte platné číslo otázky.")
       
