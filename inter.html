@@ -77,9 +77,10 @@
     <div class="bg">
         <h1>INTERSTELLAR</h1>
     </div>
-    <button id="tym" class="tym">Který tým je nejlepší?</button>
+    <button id="tym" class="tym">Který učitel je nejlepší?</button>
     <p id="nej"></p>
     <button id="py" class="down">Download</button>
+    <img src="./obrazky/jan.jpg" alt="Jan">
     <a download="nahodny.py" onclick="interstellar()"></a>
     <script>
         let tlacitko = document.querySelector("#tym")
@@ -87,7 +88,7 @@
 
         function team(){
             let cislo = Math.floor(Math.random() * 5) +1;
-            let nej = "Nejlepší tým je " + cislo
+            let nej = "Nejlepší učitel je Mgr. Jan Souhrada a kolik dní bude mít dovolenou? =" + cislo
             document.getElementById("nej").textContent = nej
         }
 
