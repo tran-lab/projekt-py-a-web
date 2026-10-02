@@ -1,7 +1,9 @@
 # INTERSTELLAR
 
 ## Instrukce
-*Python program*
+
+_Python program_
+
 - Spusť nahodny.py
 - Vyber číslo otázky
 - Napiš číslo otázky
@@ -14,5 +16,9 @@ print("hihi")
 ``` -->
 
 ### TODO:
+
 - [x] Dodělat dokumentaci
 - [ ] Vylepšit kód
+
+**Autoři:**
+Katy a Andy
